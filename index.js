@@ -1,17 +1,16 @@
 /**
  * Reverse Polish Notation Calculator
  */
+const arguments = process.argv.slice(2);
 
-var arguments = process.argv.slice(2);
+const operand1 = parseFloat(arguments[0]);
+const operand2 = parseFloat(arguments[1]);
 
-var operand1 = parseFloat(arguments[0]);
-var operand2 = parseFloat(arguments[1]);
-
-var operator = arguments[2];
+const operator = arguments[2];
 
 console.log('Calculating:', operand1, operand2, operator);
 
-var result;
+let result;
 
 switch (operator) {
   case '+':
