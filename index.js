@@ -8,7 +8,7 @@ const operand2 = parseFloat(arguments[1]);
 
 const operator = arguments[2];
 
-console.log('Calculating: ', operand1, operand2, operator);
+console.log('Calculating:', operand1, operand2, operator);
 
 let result;
 
